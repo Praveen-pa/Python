@@ -1,12 +1,10 @@
 n=[]
-maxi = 0
-while True:
-  s = input("Sentence =")
-  if s=='*':
-    break
-  else:
-    n.append(s)
-for i in n:
-  s = i.split()
-  maxi = max(maxi,len(s))
-print(maxi)
+count=0
+a=int(input("Enter number of string :"))
+for i in range(0,a):
+      s=input("Sentence =")
+      n.append(s)
+for j in n:
+      s=j.split()
+      count = max(count,len(s))
+print(count)
